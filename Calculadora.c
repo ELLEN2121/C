@@ -4,11 +4,24 @@
 
 
 main (){
-	// DeclaraÁ„o de Variaveis
+	// Declara√ß√£o de Variaveis
 	float valor1, valor2; 
 	float soma, subtracao, multiplicacao, divisao;
 	
-	// Para normalizar a acentuaÁ„o e o uso de Á
+	// Para normalizar a acentua√ß√£o e o uso de √ß
+	setlocale(LC_ALL, "Portuguese");
+	
+	#include <stdio.h> 
+#include <stdlib.h>
+#include <locale.h>
+
+
+main (){
+	// Declara√ß√£o de Variaveis
+	float valor1, valor2; 
+	float soma, subtracao, multiplicacao, divisao;
+	
+	// Para normalizar a acentua√ß√£o e o uso de √ß
 	setlocale(LC_ALL, "Portuguese");
 	
 	printf("Insira o primeiro valor:\n");
@@ -16,30 +29,19 @@ main (){
 	printf("Insira o segundo valor: \n");
 	scanf("%f",&valor2);
 	if(valor1<0||valor2<0){
-		printf("ATEN«√O: Valores inferiores a zero encontrados.\n\n");
-		// Soma 
-		printf("\t O somatÛrio equivale a: %f\n",(valor1+valor2));
-		
-		// SubtraÁ„o
-		printf("\t A subtraÁ„o equivale a: %f \n",(valor1-valor2));
-		
-		// MultiplicaÁ„o 
-		printf("\t A multiplicaÁ„o equivale a: %f \n",(valor1*valor2));
-		
-		// Divis„o 
-		printf("\t A divis„o equivale a: %f \n",(valor1/valor2));					
+		printf("ATEN√á√ÉO: Valores inferiores a zero encontrados.\n\n");				
 	}
-	else{
-		// Soma 
-		printf("\t O somatÛrio equivale a: %f\n",(valor1+valor2));
-		
-		// SubtraÁ„o
-		printf("\t A subtraÁ„o equivale a: %f \n",(valor1-valor2));
-		
-		// MultiplicaÁ„o 
-		printf("\t A multiplicaÁ„o equivale a: %f \n",(valor1*valor2));
-		
-		// Divis„o 
-		printf("\t A divis„o equivale a: %f \n",(valor1/valor2));			
-	}
+
+	// Soma 
+	printf("\t O somat√≥rio equivale a: %f\n",(valor1+valor2));
+	
+	// Subtra√ß√£o
+	printf("\t A subtra√ß√£o equivale a: %f \n",(valor1-valor2));
+	
+	// Multiplica√ß√£o 
+	printf("\t A multiplica√ß√£o equivale a: %f \n",(valor1*valor2));
+	
+	// Divis√£o 
+	printf("\t A divis√£o equivale a: %f \n",(valor1/valor2));			
+	
 }
