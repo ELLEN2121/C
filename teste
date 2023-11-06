@@ -1,0 +1,38 @@
+#include <stdio.h>
+int num1 = 0;
+int num2 = 0;
+int i = 0;
+int contPar = 0;
+int resultado = 0;
+
+int
+verifica (num1, num2)
+{
+  int num1, num2, i, contPar, resultado;
+  for (i = num1; i <= num2; i++)
+    {
+      if (i % 2 == 0)
+	{
+	  contPar++;
+	  printf ("O numero eh par e seu valor eh %d", i);
+	}
+      else
+	{
+	  printf ("O numero eh impar e seu valor eh %d", i);
+
+	}
+    }
+  return contPar;
+}
+
+int
+main ()
+{
+
+  printf ("Insira o primeiro valor: ");
+  scanf ("%d", &num1);
+  printf ("Insira o segundo valor: ");
+  scanf ("%d", &num2);
+
+  printf ("Foram encontrados %d numeros pares", verifica (num1, num2));
+}
