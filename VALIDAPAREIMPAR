@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int calculo(int nI, int nF){
+    int cont=0;
+    for(nI==nI; nI<nF; nI++){
+        if(nI%2==0){
+            printf("\n O numero %d eh PAR \n", nI);
+            cont++; // cont = cont+1
+        }
+        else{
+            printf("\n O numero %d eh IMPAR\n", nI);
+        }
+    }
+    printf("\n Houve %d numeros pares\n ", cont);
+}
+
+int main()
+{
+    int nI,nF; 
+    
+    printf("Insira o numero inicial: ");
+    scanf("%d",&nI); 
+    printf("Insira o numero Final: ");
+    scanf("%d",&nF); 
+    calculo(nI,nF); 
+    
+    return 0;
+}
